@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CryptoTrading.Repository</name>
+    </assembly>
+    <members>
+        <member name="T:CryptoTrading.Repository.CryptoRepository">
+            <summary>
+            Crypto repository.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Repository.CryptoRepository.#ctor(CryptoTrading.Data.CTDDataBase,CryptoTrading.Repository.IMemberRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Repository.CryptoRepository"/> class.
+            Constructor.
+            </summary>
+            <param name="dbContext">db.</param>
+            <param name="memberRepository">member repo.</param>
+        </member>
+        <member name="M:CryptoTrading.Repository.CryptoRepository.AddNewCrypto(System.String,System.String)">
+            <summary>
+            Add a new crypto.
+            </summary>
+            <param name="name"></param>
+            <param name="shortName"></param>
+        </member>
+        <member name="M:CryptoTrading.Repository.CryptoRepository.DoubleOrQuits(System.String,System.String,System.String,System.Double,System.Double)">
+            <summary>
+            Double or quits my money.
+            </summary>
+            <param name="username"></param>
+            <param name="cryptoShortName"></param>
+            <param name="answer"></param>
+            <param name="bTCValue"></param>
+            <param name="otherValue"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Repository.CryptoRepository.GetOne(System.String)">
+            <summary>
+            Get one.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Repository.CryptoRepository.PossibleDelet(System.String)">
+            <summary>
+            Possible to delet crypto.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Repository.CryptoRepository.Refresh">
+            <inheritdoc/>
+        </member>
+        <member name="M:CryptoTrading.Repository.CryptoRepository.SellBTC">
+            <summary>
+            Sell bitcoin.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Repository.CryptoRepository.BuyBTC">
+            <summary>
+            Buy bitcoin.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="T:CryptoTrading.Repository.CurrencyRepository">
+            <summary>
+            currency repo.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Repository.CurrencyRepository.#ctor(CryptoTrading.Data.CTDDataBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Repository.CurrencyRepository"/> class.
+            ctor.
+            </summary>
+            <param name="dbContext"></param>
+        </member>
+        <member name="M:CryptoTrading.Repository.CurrencyRepository.GetOne(System.String)">
+            <summary>
+            Get one currency.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="T:CryptoTrading.Repository.DBRepository`1">
+            <summary>
+            Base repository.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:CryptoTrading.Repository.DBRepository`1.#ctor(CryptoTrading.Data.CTDDataBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Repository.DBRepository`1"/> class.
+            Constructor.
+            </summary>
+            <param name="dbContext"></param>
+        </member>
+        <member name="M:CryptoTrading.Repository.DBRepository`1.Add(`0)">
+            <summary>
+            Add an entity to the datasbase.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Repository.DBRepository`1.Delete(`0)">
+            <summary>
+            Delete an entity to the database.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Repository.DBRepository`1.GetAll">
+            <summary>
+            Get all T from database.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Repository.DBRepository`1.GetOne(System.String)">
+            <summary>
+            Get one.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Repository.DBRepository`1.Update(`0)">
+            <summary>
+            Update an entity to the database.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="T:CryptoTrading.Repository.ICryptoRepository">
+            <summary>
+            crypto repostory interface.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Repository.ICryptoRepository.AddNewCrypto(System.String,System.String)">
+            <summary>
+            add new crypto.
+            </summary>
+            <param name="name"></param>
+            <param name="shortName"></param>
+        </member>
+        <member name="M:CryptoTrading.Repository.ICryptoRepository.PossibleDelet(System.String)">
+            <summary>
+            possible to delet a crypto.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Repository.ICryptoRepository.DoubleOrQuits(System.String,System.String,System.String,System.Double,System.Double)">
+            <summary>
+            double or quits game.
+            </summary>
+            <param name="username"></param>
+            <param name="cryptoShortName"></param>
+            <param name="answer"></param>
+            <param name="bTCValue"></param>
+            <param name="otherValue"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Repository.ICryptoRepository.Refresh">
+            <summary>
+            refresh all crypto value.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Repository.ICryptoRepository.SellBTC">
+            <summary>
+            sell all bitcoin.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Repository.ICryptoRepository.BuyBTC">
+            <summary>
+            buy bitcoin.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="T:CryptoTrading.Repository.ICurrencyRepository">
+            <summary>
+            currency repository interace.
+            </summary>
+        </member>
+        <member name="T:CryptoTrading.Repository.IMemberRepository">
+            <summary>
+            member repository interface.
+            </summary>
+        </member>
+        <member name="T:CryptoTrading.Repository.IRepository`1">
+            <summary>
+            base repo interface.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:CryptoTrading.Repository.IRepository`1.Add(`0)">
+            <summary>
+            add.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Repository.IRepository`1.Delete(`0)">
+            <summary>
+            delete.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Repository.IRepository`1.Update(`0)">
+            <summary>
+            update.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Repository.IRepository`1.GetOne(System.String)">
+            <summary>
+            get one.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Repository.IRepository`1.GetAll">
+            <summary>
+            get all.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="T:CryptoTrading.Repository.MemberRepository">
+            <summary>
+            member repo.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Repository.MemberRepository.#ctor(CryptoTrading.Data.CTDDataBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Repository.MemberRepository"/> class.
+            ctor.
+            </summary>
+            <param name="dbContext"></param>
+        </member>
+        <member name="M:CryptoTrading.Repository.MemberRepository.GetOne(System.String)">
+            <summary>
+            get one member.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="T:CryptoTrading.Repository.TradeItemBaseRepository">
+            <summary>
+            trade item base repo.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Repository.TradeItemBaseRepository.#ctor(CryptoTrading.Data.CTDDataBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Repository.TradeItemBaseRepository"/> class.
+            ctor.
+            </summary>
+            <param name="dbContext"></param>
+        </member>
+        <member name="M:CryptoTrading.Repository.TradeItemBaseRepository.GetOne(System.String)">
+            <summary>
+            get one.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="T:CryptoTrading.Repository.TradeRepository">
+            <summary>
+            trade repo.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Repository.TradeRepository.#ctor(CryptoTrading.Data.CTDDataBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Repository.TradeRepository"/> class.
+            ctor.
+            </summary>
+            <param name="dbContext"></param>
+        </member>
+        <member name="M:CryptoTrading.Repository.TradeRepository.GetOne(System.String)">
+            <summary>
+            get one.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+    </members>
+</doc>

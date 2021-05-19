@@ -1,0 +1,31 @@
+﻿<Window x:Class="CRUDApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUDApp"
+        xmlns:vm ="clr-namespace:CRUDApp.VM"
+        xmlns:data ="clr-namespace:CRUDApp.Data"
+        Title="MainWindow" Height="300" Width="400">
+    <Window.Resources>
+        <vm:MainViewModel x:Key="VM"/>
+        <DataTemplate x:Key="listTemplate" DataType="{x:Type data:CryptoModel }">
+            <DockPanel>
+                <Label Content="{Binding Path= Name}"/>
+                <Label Content="{Binding Path= ShortName}"/>
+                <Label Content="{Binding Path= Value}"/>
+                <Label />
+            </DockPanel>
+        </DataTemplate>
+    </Window.Resources>
+
+    <Grid DataContext="{StaticResource VM}" HorizontalAlignment="Center" Width="400" Height="300" VerticalAlignment="Top">
+        <ListBox ItemTemplate="{StaticResource listTemplate}"
+                 ItemsSource="{Binding Path= Cryptos}" SelectedItem="{Binding Path=CryptoSelected}"
+            Margin="185,32,41,60"/>
+
+        <Button Command="{Binding Path=AddCmd}"  Content="ADD" Margin="26,32,262,212"/>
+        <Button Command="{Binding Path=ModCmd}"  Content="UPDATE" Margin="26,108,262,136"/>
+        <Button Command="{Binding Path=DelCmd}"  Content="DELETE" Margin="26,183,262,60"/>
+    </Grid>
+</Window>

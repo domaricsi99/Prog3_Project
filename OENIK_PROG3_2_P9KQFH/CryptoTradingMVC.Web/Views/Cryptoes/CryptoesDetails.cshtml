@@ -1,0 +1,28 @@
+﻿@model CryptoTradingMVC.Web.Model.Crypto
+
+@{ 
+    ViewData["Title"] = "CryptoesDetails";
+}
+
+<h2></h2>
+
+@Html.ActionLink("Back to the list", "index")
+
+<table boreder="1">
+    <tr>
+        <td>@Html.DisplayNameFor(m => m.ID)</td>
+        <td>@Html.DisplayFor(m => m.ID)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(m => m.Name)</td>
+        <td>@Html.DisplayFor(m => m.Name)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(m => m.ShortName)</td>
+        <td>@Html.DisplayFor(m => m.ShortName)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(m => m.Value)</td>
+        <td>@Html.DisplayFor(m => m.Value)</td>
+    </tr>
+</table>

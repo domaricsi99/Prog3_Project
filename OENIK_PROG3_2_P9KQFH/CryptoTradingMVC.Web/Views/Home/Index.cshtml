@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<h2>API test</h2>
+
+<p id="message" style="color:red;font-weight:bold"></p>
+<ul id="Cryptoes"></ul>
+Crypto ID:
+<input type="text" id="ID" />
+<br />
+<button onclick="doList()">LIST</button>
+<button onclick="doListNEW()">LIST NEW</button>
+<button onclick="doAdd()">ADD</button>
+<button onclick="doMod()">MOD</button>
+<button onclick="doDel()">DEL</button>
+
+
+@section scripts {
+    <script language="javascript">
+        var url = "http://localhost:51907/CryptoesApi/";
+
+        // XSS = Cross Site Scripting
+        function htmlEncode(value) {
+            return $('<div />').text(value).html();
+        }
+
+        function doList() {
+            $.get(url + "all", null, function (data, status, jqxr) {
+                alert("ALL: " + data);
+            }, "html");
+        }
+
+        function doListNEW() {
+            $("#Cryptoes").html("");
+            $.getJSON(url + "all")
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        var html = "<li>#" +
+                            htmlEncode(item.id) + " " +
+                            htmlEncode(item.shortName) + " " +
+                            htmlEncode(item.name) + " " +
+                            htmlEncode(item.value) + " $</li>";
+                        $("#Cryptoes").append(html);
+                    });
+                });
+        }
+
+        function doAdd() {
+            var newCrypto = {
+                "shortName": "DOG", "name": "Doge coin",
+            };
+            $.post(url + "add", newCrypto, function (data, status, jqxr) {
+                $("#message").html("ADD: " + data.operationResult);
+                doListNEW();
+            });
+        }
+        function doMod() {
+            var newCrypto = {
+                "id": $("#ID").val(), "shortName": "DOG", "name": "DogeCoin"
+            };
+            $.post(url + "mod", newCrypto, function (data, status, jqxr) {
+                $("#message").html("MOD: " + data.operationResult);
+                doListNEW();
+            });
+        }
+        function doDel() {
+            $.get(url + "del/" + $("#ID").val(), null, function (data, status, jqxr) {
+                $("#message").html("DEL: " + data.operationResult);
+                doListNEW();
+            });
+        }
+    </script>
+}

@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CRUDApp</name>
+    </assembly>
+    <members>
+        <member name="T:CRUDApp.App">
+            <summary>
+            Interaction logic for App.xaml.
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:CRUDApp.App.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CRUDApp.App"/> class.
+            app.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:CRUDApp.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:CRUDApp.MyIOC">
+            <summary>
+            My container.
+            </summary>
+        </member>
+        <member name="P:CRUDApp.MyIOC.Instance">
+            <summary>
+            Gets my ioc.
+            </summary>
+        </member>
+        <member name="T:CRUDApp.BL.ICryptoLogicW">
+            <summary>
+            WPF crypto logic interface.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.BL.ICryptoLogicW.AddCrypto(System.Collections.Generic.IList{CRUDApp.Data.CryptoModel})">
+            <summary>
+            add crypto wpf.
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:CRUDApp.BL.ICryptoLogicW.ModCrypto(CRUDApp.Data.CryptoModel)">
+            <summary>
+            mod crypto wpf.
+            </summary>
+            <param name="cryptoToModify"></param>
+        </member>
+        <member name="M:CRUDApp.BL.ICryptoLogicW.DelCrypto(System.Collections.Generic.IList{CRUDApp.Data.CryptoModel},CRUDApp.Data.CryptoModel)">
+            <summary>
+            del crypto wpf.
+            </summary>
+            <param name="list"></param>
+            <param name="crypto"></param>
+        </member>
+        <member name="M:CRUDApp.BL.ICryptoLogicW.GetAllCrypto">
+            <summary>
+            get all crypto wpf.
+            </summary>
+            <returns>ASD.</returns>
+        </member>
+        <member name="T:CRUDApp.BL.CryptoLogicW">
+            <summary>
+            wpf crypto logic.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.BL.CryptoLogicW.#ctor(CRUDApp.BL.IEditorService,GalaSoft.MvvmLight.Messaging.IMessenger,CRUDApp.Data.Factory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CRUDApp.BL.CryptoLogicW"/> class.
+            crypto logic wpf.
+            </summary>
+            <param name="service"></param>
+            <param name="messenger"></param>
+            <param name="factory"></param>
+        </member>
+        <member name="M:CRUDApp.BL.CryptoLogicW.AddCrypto(System.Collections.Generic.IList{CRUDApp.Data.CryptoModel})">
+            <summary>
+            add crypto wpf.
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:CRUDApp.BL.CryptoLogicW.ModCrypto(CRUDApp.Data.CryptoModel)">
+            <summary>
+            mod crypto wpf.
+            </summary>
+            <param name="cryptoToModify"></param>
+        </member>
+        <member name="M:CRUDApp.BL.CryptoLogicW.DelCrypto(System.Collections.Generic.IList{CRUDApp.Data.CryptoModel},CRUDApp.Data.CryptoModel)">
+            <summary>
+            del crypto wpf.
+            </summary>
+            <param name="list"></param>
+            <param name="crypto"></param>
+        </member>
+        <member name="M:CRUDApp.BL.CryptoLogicW.GetAllCrypto">
+            <summary>
+            get all crypto wpf.
+            </summary>
+            <returns>ASD.</returns>
+        </member>
+        <member name="T:CRUDApp.BL.IEditorService">
+            <summary>
+            editor service interface.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.BL.IEditorService.EditCrypto(CRUDApp.Data.CryptoModel)">
+            <summary>
+            edit crypto.
+            </summary>
+            <param name="crypto"></param>
+            <returns>TRUE.</returns>
+        </member>
+        <member name="T:CRUDApp.Data.CryptoModel">
+            <summary>
+            crypto model wpf.
+            </summary>
+        </member>
+        <member name="P:CRUDApp.Data.CryptoModel.Name">
+            <summary>
+            Gets or sets crypto model name prop wpf.
+            </summary>
+        </member>
+        <member name="P:CRUDApp.Data.CryptoModel.ShortName">
+            <summary>
+            Gets or sets crypto model short name prop.
+            </summary>
+        </member>
+        <member name="P:CRUDApp.Data.CryptoModel.Value">
+            <summary>
+            Gets or sets crypto model value prop.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.Data.CryptoModel.CopyFrom(CRUDApp.Data.CryptoModel)">
+            <summary>
+            copy from ctor.
+            </summary>
+            <param name="other"></param>
+        </member>
+        <member name="T:CRUDApp.Data.Factory">
+            <summary>
+            DB, repo.
+            </summary>
+        </member>
+        <member name="F:CRUDApp.Data.Factory.cryptoLogic">
+            <summary>
+            Crypto logic field.
+            </summary>
+        </member>
+        <member name="F:CRUDApp.Data.Factory.currencyLogic">
+            <summary>
+            Currency logic field.
+            </summary>
+        </member>
+        <member name="F:CRUDApp.Data.Factory.memberLogic">
+            <summary>
+            Member logic fiel.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.Data.Factory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CRUDApp.Data.Factory"/> class.
+            Initializes a new instanceof the <see cref="T:CRUDApp.Data.Factory"/> class.
+            </summary>
+        </member>
+        <member name="P:CRUDApp.Data.Factory.GetCryptoLogic">
+            <summary>
+            Gets icryptologic ctor.
+            </summary>
+        </member>
+        <member name="P:CRUDApp.Data.Factory.GetMemberLogic">
+            <summary>
+            Gets iMemberlogic ctor.
+            </summary>
+        </member>
+        <member name="P:CRUDApp.Data.Factory.GetCurrencyLogic">
+            <summary>
+            Gets iCurrencyLogic ctor.
+            </summary>
+        </member>
+        <member name="T:CRUDApp.EditorWindow">
+            <summary>
+            Interaction logic for EditorWindow.xaml.
+            </summary>
+            <summary>
+            EditorWindow
+            </summary>
+        </member>
+        <member name="P:CRUDApp.EditorWindow.Crypto">
+            <summary>
+            Gets editor window crypto model.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.EditorWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CRUDApp.EditorWindow"/> class.
+            ctor.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.EditorWindow.#ctor(CRUDApp.Data.CryptoModel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CRUDApp.EditorWindow"/> class.
+            ctor.
+            </summary>
+            <param name="newCrypto"></param>
+        </member>
+        <member name="M:CRUDApp.EditorWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CRUDApp.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml.
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:CRUDApp.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CRUDApp.MainWindow"/> class.
+            ctor.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CRUDApp.UI.EditorServiceViaWindow">
+            <summary>
+            editor service via window.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.UI.EditorServiceViaWindow.EditCrypto(CRUDApp.Data.CryptoModel)">
+            <summary>
+            edit crypto.
+            </summary>
+            <param name="crypto"></param>
+            <returns>TRUE.</returns>
+        </member>
+        <member name="T:CRUDApp.VM.EditorViewModel">
+            <summary>
+            Editor view model.
+            </summary>
+        </member>
+        <member name="P:CRUDApp.VM.EditorViewModel.Crypto">
+            <summary>
+            Gets or sets crypto.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.VM.EditorViewModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CRUDApp.VM.EditorViewModel"/> class.
+            editor view model.
+            </summary>
+        </member>
+        <member name="T:CRUDApp.VM.MainViewModel">
+            <summary>
+            Main view model.
+            </summary>
+        </member>
+        <member name="F:CRUDApp.VM.MainViewModel.cryptoSelected">
+            <summary>
+            crypto model.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.VM.MainViewModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CRUDApp.VM.MainViewModel"/> class.
+            ctor.
+            </summary>
+        </member>
+        <member name="M:CRUDApp.VM.MainViewModel.#ctor(CRUDApp.BL.ICryptoLogicW)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CRUDApp.VM.MainViewModel"/> class.
+            ctor.
+            </summary>
+            <param name="logicW"></param>
+        </member>
+        <member name="P:CRUDApp.VM.MainViewModel.CryptoSelected">
+            <summary>
+            Gets or sets selected crypto.
+            </summary>
+        </member>
+        <member name="P:CRUDApp.VM.MainViewModel.Cryptos">
+            <summary>
+            Gets cryptos.
+            </summary>
+        </member>
+        <member name="P:CRUDApp.VM.MainViewModel.AddCmd">
+            <summary>
+            Gets add command.
+            </summary>
+        </member>
+        <member name="P:CRUDApp.VM.MainViewModel.ModCmd">
+            <summary>
+            Gets mod command.
+            </summary>
+        </member>
+        <member name="P:CRUDApp.VM.MainViewModel.DelCmd">
+            <summary>
+            Gets del command.
+            </summary>
+        </member>
+    </members>
+</doc>

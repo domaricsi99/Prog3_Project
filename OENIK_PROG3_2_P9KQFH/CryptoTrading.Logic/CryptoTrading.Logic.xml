@@ -1,0 +1,638 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CryptoTrading.Logic</name>
+    </assembly>
+    <members>
+        <member name="T:CryptoTrading.Logic.CryptoLogic">
+            <summary>
+            Crypto logic set.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Logic.CryptoLogic.BTCValue">
+            <summary>
+            Gets or sets bITCOIN value prop.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Logic.CryptoLogic.OtherValue">
+            <summary>
+            Gets or sets other crypto value prop.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.#ctor(CryptoTrading.Repository.ICryptoRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Logic.CryptoLogic"/> class.
+            </summary>
+            <param name="cryptoRepo"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.#ctor(CryptoTrading.Repository.CryptoRepository,CryptoTrading.Repository.MemberRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Logic.CryptoLogic"/> class.
+            </summary>
+            <param name="cryptoRepo"></param>
+            <param name="memberRepository"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Logic.CryptoLogic"/> class.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.GetOne(System.String)">
+            <summary>
+            Get one crypto.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.Add(Models.Crypto)">
+            <summary>
+            Add new crypto.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.Remove(Models.Crypto)">
+            <summary>
+            Remove one crypto.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.Update(Models.Crypto)">
+            <summary>
+            Update current crypto.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.Read(Models.Crypto)">
+            <summary>
+            Get all crypto.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.ReadAll">
+            <summary>
+            Get all crypto.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.GetAllNameAsString">
+            <summary>
+            Get all crypto name as string.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.CryptoPrice">
+            <summary>
+            Get all crypto price in USD.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.SellBTC">
+            <summary>
+            Sell bitcoin.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.SellBTCAsync">
+            <summary>
+            Buy bitcoin async.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.BuyBTC">
+            <summary>
+            Buy bitcoin.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.BuyBTCAsync">
+            <summary>
+            Buy bitcoin async.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.AddNewCrypto(System.String,System.String)">
+            <summary>
+            Add a new cypto.
+            </summary>
+            <param name="name"></param>
+            <param name="shortName"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.Refresh">
+            <summary>
+            Refresh the crypto value.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.PossibleDelet(System.String)">
+            <summary>
+            Possible to delet crypto.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.DoubleOrQuits(System.String,System.String,System.String)">
+            <summary>
+            Double or quits my money.
+            </summary>
+            <param name="username"></param>
+            <param name="cryptoShortName"></param>
+            <param name="answer"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.DoubleOrQuitsDoSomethingAsync(System.String,System.String,System.String)">
+            <summary>
+            TASK Double or quits my money.
+            </summary>
+            <param name="username"></param>
+            <param name="cryptoShortName"></param>
+            <param name="answer"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CryptoLogic.GetAllNameAsStringDoSomethingAsync">
+            <summary>
+            Get All Name As String Do Something Async.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="T:CryptoTrading.Logic.CurrencyLogic">
+            <summary>
+            Curreny's logic class.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.CurrencyLogic.#ctor(CryptoTrading.Repository.ICurrencyRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Logic.CurrencyLogic"/> class.
+            Contsructor.
+            </summary>
+            <param name="currencyRepo"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CurrencyLogic.Add(Models.Currency)">
+            <summary>
+            Add a new currency to the database.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CurrencyLogic.Read(Models.Currency)">
+            <summary>
+            Back to all currency.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CurrencyLogic.Remove(Models.Currency)">
+            <summary>
+            Remove one currency to the database.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CurrencyLogic.Update(Models.Currency)">
+            <summary>
+            Update.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CurrencyLogic.GetAllNameAsString">
+            <summary>
+            Get all currency name as string.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CurrencyLogic.AddNewOne(System.String,System.String,System.String,System.String)">
+            <summary>
+            Add a new currency.
+            </summary>
+            <param name="name"></param>
+            <param name="shortName"></param>
+            <param name="nationality"></param>
+            <param name="symbol"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CurrencyLogic.Refresh(CryptoTrading.Logic.ICurrencyLogic)">
+            <summary>
+            Refresh currencies value.
+            </summary>
+            <param name="currencyLogic"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.CurrencyLogic.CurrencyPrice">
+            <summary>
+            Get all currency value.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.CurrencyLogic.DeleteCurrency(System.String)">
+            <summary>
+            Delete currency.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="T:CryptoTrading.Logic.ICryptoLogic">
+            <summary>
+            Interface crypto logic.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.CryptoPrice">
+            <summary>
+            Get crypto price.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.SellBTC">
+            <summary>
+            Sell bitcoin.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.BuyBTC">
+            <summary>
+            Buy bitcoin.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.AddNewCrypto(System.String,System.String)">
+            <summary>
+            Add new crypto.
+            </summary>
+            <param name="name"></param>
+            <param name="shortName"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.Refresh">
+            <summary>
+            Refresh all crypto price.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.PossibleDelet(System.String)">
+            <summary>
+            Possible to delet a crypto.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.DoubleOrQuits(System.String,System.String,System.String)">
+            <summary>
+            Double or quits trade.
+            </summary>
+            <param name="username"></param>
+            <param name="cryptoShortName"></param>
+            <param name="answer"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.GetAllNameAsStringDoSomethingAsync">
+            <summary>
+            Get All Name As String Do Something Async.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.DoubleOrQuitsDoSomethingAsync(System.String,System.String,System.String)">
+            <summary>
+            TASK Double or quits my money.
+            </summary>
+            <param name="username"></param>
+            <param name="cryptoShortName"></param>
+            <param name="answer"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.BuyBTCAsync">
+            <summary>
+            Buy bitcoin ASYNC.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.SellBTCAsync">
+            <summary>
+            Buy bitcoin async.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.ReadAll">
+            <summary>
+            Read all crypto.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.Add(Models.Crypto)">
+            <summary>
+            Add to database.
+            </summary>
+            <param name="entity">entity.</param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.Remove(Models.Crypto)">
+            <summary>
+            remove from database.
+            </summary>
+            <param name="entity">entity.</param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.Update(Models.Crypto)">
+            <summary>
+            update something from database.
+            </summary>
+            <param name="entity">entity.</param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.Read(Models.Crypto)">
+            <summary>
+            read something from database.
+            </summary>
+            <param name="entity">entity.</param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptoLogic.GetAllNameAsString">
+            <summary>
+            get something all name as string.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="T:CryptoTrading.Logic.ICryptooLogic">
+            <summary>
+            crypto logic interface.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptooLogic.Add(Models.Crypto)">
+            <summary>
+            Add to database.
+            </summary>
+            <param name="entity">entity.</param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptooLogic.Remove(Models.Crypto)">
+            <summary>
+            remove from database.
+            </summary>
+            <param name="entity">entity.</param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptooLogic.Update(Models.Crypto)">
+            <summary>
+            update something from database.
+            </summary>
+            <param name="entity">entity.</param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptooLogic.Read(Models.Crypto)">
+            <summary>
+            read something from database.
+            </summary>
+            <param name="entity">entity.</param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICryptooLogic.GetAllNameAsString">
+            <summary>
+            get something all name as string.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="T:CryptoTrading.Logic.ICurrencyLogic">
+            <summary>
+            interface currency logic.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICurrencyLogic.AddNewOne(System.String,System.String,System.String,System.String)">
+            <summary>
+            Add new currency.
+            </summary>
+            <param name="name"></param>
+            <param name="shortName"></param>
+            <param name="nationality"></param>
+            <param name="symbol"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICurrencyLogic.CurrencyPrice">
+            <summary>
+            Actual currency price.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICurrencyLogic.DeleteCurrency(System.String)">
+            <summary>
+            Delet a currency from database.
+            </summary>
+            <param name="shortName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.ICurrencyLogic.Refresh(CryptoTrading.Logic.ICurrencyLogic)">
+            <summary>
+            Refresh the currency value.
+            </summary>
+            <param name="currencyLogic"></param>
+        </member>
+        <member name="T:CryptoTrading.Logic.ILogic`1">
+            <summary>
+            Base logic interface.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:CryptoTrading.Logic.ILogic`1.Add(`0)">
+            <summary>
+            Add to database.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ILogic`1.Remove(`0)">
+            <summary>
+            remove from database.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ILogic`1.Update(`0)">
+            <summary>
+            update something from database.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ILogic`1.Read(`0)">
+            <summary>
+            read something from database.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.ILogic`1.GetAllNameAsString">
+            <summary>
+            get something all name as string.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="T:CryptoTrading.Logic.ILogicTrade">
+            <summary>
+            interface trade logic.
+            </summary>
+        </member>
+        <member name="T:CryptoTrading.Logic.IMemberLogic">
+            <summary>
+            member logic interface.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.IMemberLogic.Buy">
+            <summary>
+            buy crypto or currency.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.IMemberLogic.Sell">
+            <summary>
+            sell crypto or currency.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.IMemberLogic.MyMoney">
+            <summary>
+            Member actual money.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.IMemberLogic.Btc">
+            <summary>
+            btc list.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.IMemberLogic.AddNew(System.String,System.String,System.String,System.Int32,System.Double)">
+            <summary>
+            Add new member to database.
+            </summary>
+            <param name="userName"></param>
+            <param name="password"></param>
+            <param name="fullName"></param>
+            <param name="birthYear"></param>
+            <param name="money"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.IMemberLogic.DeleteMember(System.String)">
+            <summary>
+            delete member from database.
+            </summary>
+            <param name="userName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.IMemberLogic.Deposite(System.Double,System.String)">
+            <summary>
+            deposite money.
+            </summary>
+            <param name="money"></param>
+            <param name="username"></param>
+        </member>
+        <member name="T:CryptoTrading.Logic.MemberLogic">
+            <summary>
+            member logic.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.#ctor(CryptoTrading.Repository.IMemberRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Logic.MemberLogic"/> class.
+            ctor.
+            </summary>
+            <param name="memberRepo"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.Add(Models.Member)">
+            <summary>
+            add member to database.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.Read(Models.Member)">
+            <summary>
+            read a member from database.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.Remove(Models.Member)">
+            <summary>
+            remove a member from database.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.Update(Models.Member)">
+            <summary>
+            update member.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.Register(System.String,System.String)">
+            <summary>
+            Register.
+            </summary>
+            <param name="userName"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.GetAllNameAsString">
+            <summary>
+            All name as string.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.Buy">
+            <summary>
+            not work yet.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.Sell">
+            <summary>
+            not work yet.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.MyMoney">
+            <summary>
+            actual money.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.Btc">
+            <summary>
+            return btc object.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.AddNew(System.String,System.String,System.String,System.Int32,System.Double)">
+            <summary>
+            add a new member to database.
+            </summary>
+            <param name="userName"></param>
+            <param name="password"></param>
+            <param name="fullName"></param>
+            <param name="birthYear"></param>
+            <param name="money"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.DeleteMember(System.String)">
+            <summary>
+            delete member from database.
+            </summary>
+            <param name="userName"></param>
+            <returns>asd.</returns>
+        </member>
+        <member name="M:CryptoTrading.Logic.MemberLogic.Deposite(System.Double,System.String)">
+            <summary>
+            deposite money.
+            </summary>
+            <param name="money"></param>
+            <param name="username"></param>
+        </member>
+        <member name="T:CryptoTrading.Logic.TradeLogic">
+            <summary>
+            trade logic.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Logic.TradeLogic.#ctor(CryptoTrading.Repository.TradeRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Logic.TradeLogic"/> class.
+            ctor.
+            </summary>
+            <param name="tradeRepo"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.TradeLogic.Add(Models.Trade)">
+            <summary>
+            add.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.TradeLogic.Read(Models.Trade)">
+            <summary>
+            read.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.TradeLogic.Remove(Models.Trade)">
+            <summary>
+            remove.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.TradeLogic.Update(Models.Trade)">
+            <summary>
+            update.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:CryptoTrading.Logic.TradeLogic.GetAllNameAsString">
+            <summary>
+            get all name as stgring.
+            </summary>
+            <returns>asd.</returns>
+        </member>
+    </members>
+</doc>

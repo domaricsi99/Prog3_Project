@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CryptoTrading.Data</name>
+    </assembly>
+    <members>
+        <member name="T:CryptoTrading.Data.CTDDataBase">
+            <summary>
+            Class to create database.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Data.CTDDataBase.Members">
+            <summary>
+            Gets or sets Member.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Data.CTDDataBase.Cryptos">
+            <summary>
+            Gets or sets Crypto.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Data.CTDDataBase.Currencies">
+            <summary>
+            Gets or sets Currency.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Data.CTDDataBase.Trades">
+            <summary>
+            Gets or sets Trade.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Data.CTDDataBase.TradeItemBases">
+            <summary>
+            Gets or sets tradeItemBase.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Data.CTDDataBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Data.CTDDataBase"/> class.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Data.CTDDataBase.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Create method.
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="M:CryptoTrading.Data.CTDDataBase.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Configuring method.
+            </summary>
+            <param name="optionsBuilder"></param>
+        </member>
+    </members>
+</doc>

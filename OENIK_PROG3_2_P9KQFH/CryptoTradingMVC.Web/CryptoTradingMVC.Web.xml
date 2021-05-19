@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CryptoTradingMVC.Web</name>
+    </assembly>
+    <members>
+        <member name="T:CryptoTradingMVC.Web.Controllers.ApiResult">
+            <summary>
+            API result.
+            </summary>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Controllers.ApiResult.OperationResult">
+            <summary>
+            Gets or sets a value indicating whether operation result.
+            </summary>
+        </member>
+        <member name="T:CryptoTradingMVC.Web.Controllers.CryptoesAPIController">
+            <summary>
+            API controller.
+            </summary>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.CryptoesAPIController.#ctor(CryptoTrading.Logic.ICryptoLogic,AutoMapper.IMapper)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTradingMVC.Web.Controllers.CryptoesAPIController"/> class.
+            </summary>
+            <param name="logic">logic.</param>
+            <param name="mapper">mapper.</param>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.CryptoesAPIController.GetAll">
+            <summary>
+            get cryptoesAPI/ getall.
+            </summary>
+            <returns>IEnumerable crypto.</returns>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.CryptoesAPIController.DelOneCrypto(System.Int32)">
+            <summary>
+            Get cryptoesAPI/del/5.
+            </summary>
+            <param name="id">crypto id.</param>
+            <returns>bool.</returns>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.CryptoesAPIController.AddOneCar(CryptoTradingMVC.Web.Model.Crypto)">
+            <summary>
+            Post CryptoesAPI/add + post 1 crypto.
+            </summary>
+            <param name="crypto">crypto.</param>
+            <returns>one crypto.</returns>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.CryptoesAPIController.ModOneCar(CryptoTradingMVC.Web.Model.Crypto)">
+            <summary>
+            POST CryptoesAPI/mod + post 1 crypto.
+            </summary>
+            <param name="crypto">crypto.</param>
+            <returns>1 crypto.</returns>
+        </member>
+        <member name="T:CryptoTradingMVC.Web.Controllers.CryptoesController">
+            <summary>
+            MVC controller.
+            </summary>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.CryptoesController.#ctor(CryptoTrading.Logic.ICryptoLogic,AutoMapper.IMapper)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTradingMVC.Web.Controllers.CryptoesController"/> class.
+            </summary>
+            <param name="logic">logic.</param>
+            <param name="mapper">mapper.</param>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.CryptoesController.Index">
+            <summary>
+            Index.
+            </summary>
+            <returns>Action result.</returns>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.CryptoesController.Details(System.Int32)">
+            <summary>
+            Details.
+            </summary>
+            <param name="id">crypto id.</param>
+            <returns>action.</returns>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.CryptoesController.Remove(System.Int32)">
+            <summary>
+            Remove.
+            </summary>
+            <param name="id">crypto id.</param>
+            <returns>action.</returns>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.CryptoesController.Edit(System.Int32)">
+            <summary>
+            Edit.
+            </summary>
+            <param name="id">crypto id.</param>
+            <returns>action.</returns>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.CryptoesController.Edit(CryptoTradingMVC.Web.Model.Crypto,System.String)">
+            <summary>
+            Edit.
+            </summary>
+            <param name="crypto">crypto.</param>
+            <param name="editAction">action.</param>
+            <returns>ection.</returns>
+        </member>
+        <member name="T:CryptoTradingMVC.Web.Controllers.HomeController">
+            <summary>
+            Home controller class.
+            </summary>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.HomeController.#ctor(Microsoft.Extensions.Logging.ILogger{CryptoTradingMVC.Web.Controllers.HomeController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTradingMVC.Web.Controllers.HomeController"/> class.
+            </summary>
+            <param name="logger">loger.</param>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.HomeController.Index">
+            <summary>
+            Index.
+            </summary>
+            <returns>action.</returns>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.HomeController.Privacy">
+            <summary>
+            Privacy.
+            </summary>
+            <returns>action.</returns>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Controllers.HomeController.Error">
+            <summary>
+            Error.
+            </summary>
+            <returns>action.</returns>
+        </member>
+        <member name="T:CryptoTradingMVC.Web.Model.Crypto">
+            <summary>
+            Crypto MVC class.
+            </summary>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Model.Crypto.Value">
+            <summary>
+            Gets or sets value.
+            </summary>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Model.Crypto.ID">
+            <summary>
+            Gets or sets the reference Crypto.
+            </summary>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Model.Crypto.Name">
+            <summary>
+            Gets or sets the item name wherewith you trade.
+            </summary>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Model.Crypto.ShortName">
+            <summary>
+            Gets or sets the item short name wherewith you trade.
+            </summary>
+        </member>
+        <member name="T:CryptoTradingMVC.Web.Model.CryptoesViewModel">
+            <summary>
+            Cryptoes view model.
+            </summary>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Model.CryptoesViewModel.EditedCrypto">
+            <summary>
+            Gets or sets edited crypto.
+            </summary>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Model.CryptoesViewModel.ListOfCryptoes">
+            <summary>
+            Gets or sets list of cryptoes.
+            </summary>
+        </member>
+        <member name="T:CryptoTradingMVC.Web.Model.ErrorViewModel">
+            <summary>
+            editor view model.
+            </summary>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Model.ErrorViewModel.RequestId">
+            <summary>
+            Gets or sets reguest id.
+            </summary>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Model.ErrorViewModel.ShowRequestId">
+            <summary>
+            Gets a value indicating whether show request id.
+            </summary>
+        </member>
+        <member name="T:CryptoTradingMVC.Web.Model.MapperFactory">
+            <summary>
+            Mapper factory.
+            </summary>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Model.MapperFactory.CreateCryptoMapper">
+            <summary>
+            Create mapper.
+            </summary>
+            <returns>imapper.</returns>
+        </member>
+        <member name="T:CryptoTradingMVC.Web.Model.MemberMVC">
+            <summary>
+            Member model in mvc.
+            </summary>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Model.MemberMVC.MemberID">
+            <summary>
+            Gets or sets adb.
+            </summary>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Model.MemberMVC.BTCWallet">
+            <summary>
+            Gets or sets here can we storage the Bitcoins.
+            </summary>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Model.MemberMVC.ETHWallet">
+            <summary>
+            Gets or sets here can we storage the Ethereum.
+            </summary>
+        </member>
+        <member name="T:CryptoTradingMVC.Web.Program">
+            <summary>
+            MVC program.
+            </summary>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Program.Main(System.String[])">
+            <summary>
+            Main.
+            </summary>
+            <param name="args">args.</param>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Create Host Builder.
+            </summary>
+            <param name="args">args.</param>
+            <returns>i host builder.</returns>
+        </member>
+        <member name="T:CryptoTradingMVC.Web.Startup">
+            <summary>
+            Startup class.
+            </summary>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTradingMVC.Web.Startup"/> class.
+            </summary>
+            <param name="configuration">configuration.</param>
+        </member>
+        <member name="P:CryptoTradingMVC.Web.Startup.Configuration">
+            <summary>
+            Gets config.
+            </summary>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Config service.
+            </summary>
+            <param name="services">service.</param>
+        </member>
+        <member name="M:CryptoTradingMVC.Web.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configure class.
+            </summary>
+            <param name="app">app.</param>
+            <param name="env">env.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CryptoTrading.Program</name>
+    </assembly>
+    <members>
+        <member name="T:CryptoTrading.Program.Factory">
+            <summary>
+            DB, repo.
+            </summary>
+        </member>
+        <member name="F:CryptoTrading.Program.Factory.cryptoLogic">
+            <summary>
+            Crypto logic field.
+            </summary>
+        </member>
+        <member name="F:CryptoTrading.Program.Factory.currencyLogic">
+            <summary>
+            Currency logic field.
+            </summary>
+        </member>
+        <member name="F:CryptoTrading.Program.Factory.memberLogic">
+            <summary>
+            Member logic fiel.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Program.Factory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Program.Factory"/> class.
+            Initializes a new instanceof the <see cref="T:CryptoTrading.Program.Factory"/> class.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Program.Factory.GetCryptoLogic">
+            <summary>
+            Gets icryptologic ctor.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Program.Factory.GetMemberLogic">
+            <summary>
+            Gets iMemberlogic ctor.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Program.Factory.GetCurrencyLogic">
+            <summary>
+            Gets iCurrencyLogic ctor.
+            </summary>
+        </member>
+        <member name="T:CryptoTrading.Program.Program">
+            <summary>
+            program.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<CryptoTradingMVC.Web.Model.Crypto>
+
+<h2>Cryptoes list</h2>
+
+@if (Model.Count() == 0)
+{
+    <p>No data in the database!</p>
+}
+else
+{
+<table border="1">
+    <tr>
+        <th>@Html.DisplayNameFor(m => m.First().Name)</th>
+        <th>@Html.DisplayNameFor(m => m.First().ShortName)</th>
+        <th>Datasheet</th>
+        <th>Delete</th>
+        <th>Modify</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@Html.DisplayFor(m => item.Name)</td>
+        <td>@Html.DisplayFor(m => item.ShortName)</td>
+        <td>@Html.ActionLink("{SHOW]", "Details", new { id = item.ID })</td>
+        <td>@Html.ActionLink("{DEL]", "Remove", new { id = item.ID })</td>
+        <td>@Html.ActionLink("{EDIT]", "Edit", new { id = item.ID })</td>
+    </tr>
+    }
+</table>
+}

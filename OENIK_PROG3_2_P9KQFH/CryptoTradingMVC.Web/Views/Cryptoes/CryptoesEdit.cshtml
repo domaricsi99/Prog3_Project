@@ -1,0 +1,25 @@
+﻿@model CryptoTradingMVC.Web.Model.Crypto
+
+<h2>Cryptoes Edit</h2>
+
+@using (Html.BeginForm("Edit", "Cryptoes"))
+{
+    @Html.ValidationSummary()
+
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(m => m.ID)
+
+    @Html.Hidden("editAction", ViewData["editAction"].ToString())
+
+    <div class="editor label">@Html.LabelFor(m => m.Name)</div>
+    <div class="editor field">@Html.EditorFor(m => m.Name)</div>
+
+    <div class="editor label">@Html.LabelFor(m => m.ShortName)</div>
+    <div class="editor field">@Html.EditorFor(m => m.ShortName)</div>
+
+    <div typeof="double" class="editor label">@Html.LabelFor(m => m.Value)</div>
+    <div typeof="double" class="editor field">@Html.EditorFor(m => m.Value)</div>
+
+    <input type="submit" value="SEND"/>
+}

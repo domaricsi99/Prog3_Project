@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Models</name>
+    </assembly>
+    <members>
+        <member name="T:Models.Crypto">
+            <summary>
+            Crypto currency like BITCOIN.
+            </summary>
+        </member>
+        <member name="P:Models.Crypto.Rank">
+            <summary>
+            Gets or sets rank in top 100.
+            </summary>
+        </member>
+        <member name="P:Models.Crypto.Popularity">
+            <summary>
+            Gets or sets Popularity among 100 people.
+            </summary>
+        </member>
+        <member name="P:Models.Crypto.CryptoID">
+            <summary>
+            Gets or sets the reference Crypto.
+            </summary>
+        </member>
+        <member name="M:Models.Crypto.CopyFrom(Models.Crypto)">
+            <summary>
+            copy from.
+            </summary>
+            <param name="other"></param>
+        </member>
+        <member name="T:Models.Currency">
+            <summary>
+            Like USD.
+            </summary>
+        </member>
+        <member name="P:Models.Currency.Nationality">
+            <summary>
+            Gets or sets currency Nationality.
+            </summary>
+        </member>
+        <member name="P:Models.Currency.Symbol">
+            <summary>
+            Gets or sets the currency symbol.
+            </summary>
+        </member>
+        <member name="P:Models.Currency.CurrencyID">
+            <summary>
+            Gets or sets the reference to currency.
+            </summary>
+        </member>
+        <member name="P:Models.Currency.Trades">
+            <summary>
+            Gets asd.
+            </summary>
+        </member>
+        <member name="M:Models.Currency.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Models.Currency"/> class.
+            ads.
+            </summary>
+        </member>
+        <member name="T:Models.Member">
+            <summary>
+            A user who want to trade or exchange.
+            </summary>
+        </member>
+        <member name="P:Models.Member.MemberID">
+            <summary>
+            Gets or sets the  reference to Member.
+            </summary>
+        </member>
+        <member name="P:Models.Member.FullName">
+            <summary>
+            Gets or sets the user's full name.
+            </summary>
+        </member>
+        <member name="P:Models.Member.BirthYear">
+            <summary>
+            Gets or sets the user's birth year.
+            </summary>
+        </member>
+        <member name="P:Models.Member.Money">
+            <summary>
+            Gets or sets the user money.
+            </summary>
+        </member>
+        <member name="P:Models.Member.UserName">
+            <summary>
+            Gets or sets user's username.
+            </summary>
+        </member>
+        <member name="P:Models.Member.Password">
+            <summary>
+            Gets or sets user's password.
+            </summary>
+        </member>
+        <member name="P:Models.Member.BTCWallet">
+            <summary>
+            Gets or sets here can we storage the Bitcoins.
+            </summary>
+        </member>
+        <member name="P:Models.Member.ETHWallet">
+            <summary>
+            Gets or sets here can we storage the Ethereum.
+            </summary>
+        </member>
+        <member name="P:Models.Member.Trades">
+            <summary>
+            Gets reference to Trade table.
+            </summary>
+        </member>
+        <member name="M:Models.Member.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Models.Member"/> class.
+            </summary>
+        </member>
+        <member name="T:Models.Trade">
+            <summary>
+            If a user want to trade do it here.
+            </summary>
+        </member>
+        <member name="P:Models.Trade.TradeID">
+            <summary>
+            Gets or sets reference to trade.
+            </summary>
+        </member>
+        <member name="P:Models.Trade.MemberID">
+            <summary>
+            Gets or sets adb.
+            </summary>
+        </member>
+        <member name="P:Models.Trade.TradingDate">
+            <summary>
+            Gets or sets witch day you trade.
+            </summary>
+        </member>
+        <member name="P:Models.Trade.TradeItem">
+            <summary>
+            Gets or sets Wherewith you trade.
+            </summary>
+        </member>
+        <member name="P:Models.Trade.Members">
+            <summary>
+            Gets or sets reference to Member table.
+            </summary>
+        </member>
+        <member name="P:Models.Trade.TradeItemBases">
+            <summary>
+            Gets or sets reference to TradeItemBase table.
+            </summary>
+        </member>
+        <member name="P:Models.Trade.Currencies">
+            <summary>
+            Gets or sets reference to Currency table.
+            </summary>
+        </member>
+        <member name="P:Models.Trade.Cryptoses">
+            <summary>
+            Gets or sets reference to Crypto table.
+            </summary>
+        </member>
+        <member name="T:Models.TradeItemBase">
+            <summary>
+            Base to Trade.
+            </summary>
+        </member>
+        <member name="P:Models.TradeItemBase.Name">
+            <summary>
+            Gets or sets the item name wherewith you trade.
+            </summary>
+        </member>
+        <member name="P:Models.TradeItemBase.ShortName">
+            <summary>
+            Gets or sets the item short name wherewith you trade.
+            </summary>
+        </member>
+        <member name="P:Models.TradeItemBase.Value">
+            <summary>
+            Gets or sets value.
+            </summary>
+        </member>
+        <member name="P:Models.TradeItemBase.ValueToOneUSD">
+            <summary>
+            Gets or sets value to one USD.
+            This prop help to which exchange rate should we exchange.
+            </summary>
+        </member>
+        <member name="P:Models.TradeItemBase.Currencies">
+            <summary>
+            Gets or sets reference to Currency table.
+            </summary>
+        </member>
+        <member name="P:Models.TradeItemBase.Trades">
+            <summary>
+            Gets or sets reference to Trade table.
+            </summary>
+        </member>
+        <member name="M:Models.TradeItemBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Models.TradeItemBase"/> class.
+            </summary>
+        </member>
+    </members>
+</doc>

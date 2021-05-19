@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CryptoTrading.Wpf</name>
+    </assembly>
+    <members>
+        <member name="T:CryptoTrading.Wpf.App">
+            <summary>
+            Interaction logic for App.xaml.
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Wpf.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Wpf.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:CryptoTrading.Wpf.CryptoVM">
+            <summary>
+            Crypto vm class.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Wpf.CryptoVM.ID">
+            <summary>
+            Gets or sets crypto model name prop wpf.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Wpf.CryptoVM.Name">
+            <summary>
+            Gets or sets crypto model name prop wpf.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Wpf.CryptoVM.ShortName">
+            <summary>
+            Gets or sets crypto model short name prop.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Wpf.CryptoVM.Value">
+            <summary>
+            Gets or sets crypto model value prop.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Wpf.CryptoVM.CopyFrom(CryptoTrading.Wpf.CryptoVM)">
+            <summary>
+            copy from ctor.
+            </summary>
+            <param name="other">other crypto.</param>
+        </member>
+        <member name="T:CryptoTrading.Wpf.EditorWindow">
+            <summary>
+            Interaction logic for EditorWindow.xaml.
+            </summary>
+            <summary>
+            EditorWindow
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Wpf.EditorWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Wpf.EditorWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Wpf.EditorWindow.#ctor(CryptoTrading.Wpf.CryptoVM)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Wpf.EditorWindow"/> class.
+            </summary>
+            <param name="crypto">crypto.</param>
+        </member>
+        <member name="M:CryptoTrading.Wpf.EditorWindow.OkClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ok click.
+            </summary>
+            <param name="sender">sender.</param>
+            <param name="e">e.</param>
+        </member>
+        <member name="M:CryptoTrading.Wpf.EditorWindow.CancelClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Cancel click.
+            </summary>
+            <param name="sender">sender.</param>
+            <param name="e">e.</param>
+        </member>
+        <member name="M:CryptoTrading.Wpf.EditorWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CryptoTrading.Wpf.MainLogic">
+            <summary>
+            Main logic.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Wpf.MainLogic.SendMessage(System.Boolean)">
+            <summary>
+            Send message.
+            </summary>
+            <param name="success">message.</param>
+        </member>
+        <member name="M:CryptoTrading.Wpf.MainLogic.ApiGetCrypto">
+            <summary>
+            Apiit get crypto.
+            </summary>
+            <returns>list crypto vm.</returns>
+        </member>
+        <member name="M:CryptoTrading.Wpf.MainLogic.ApiDelCrypto(CryptoTrading.Wpf.CryptoVM)">
+            <summary>
+            Api del crypto.
+            </summary>
+            <param name="crypto">crpto.</param>
+        </member>
+        <member name="M:CryptoTrading.Wpf.MainLogic.ApiEditCrypto(CryptoTrading.Wpf.CryptoVM,System.Boolean)">
+            <summary>
+            Api edit crypto.
+            </summary>
+            <param name="crypto">crypto.</param>
+            <param name="isEditing">editing.</param>
+            <returns>true or false.</returns>
+        </member>
+        <member name="M:CryptoTrading.Wpf.MainLogic.EditCrypto(CryptoTrading.Wpf.CryptoVM,System.Func{CryptoTrading.Wpf.CryptoVM,System.Boolean})">
+            <summary>
+            Edit crpyot.
+            </summary>
+            <param name="crypto">crypto.</param>
+            <param name="editor">editor.</param>
+        </member>
+        <member name="T:CryptoTrading.Wpf.MainVM">
+            <summary>
+            Main vm.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Wpf.MainVM.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Wpf.MainVM"/> class.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Wpf.MainVM.SelectedCrypto">
+            <summary>
+            Gets or sets selected crypto.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Wpf.MainVM.AllCrypto">
+            <summary>
+            Gets or sets all crypto.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Wpf.MainVM.EditorFunc">
+            <summary>
+            Gets or sets editor function.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Wpf.MainVM.AddCmd">
+            <summary>
+            Gets add cmd.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Wpf.MainVM.DelCmd">
+            <summary>
+            Gets del cmd.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Wpf.MainVM.ModCmd">
+            <summary>
+            Gets mod cmd.
+            </summary>
+        </member>
+        <member name="P:CryptoTrading.Wpf.MainVM.LoadCmd">
+            <summary>
+            Gets load cmd.
+            </summary>
+        </member>
+        <member name="T:CryptoTrading.Wpf.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml.
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Wpf.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CryptoTrading.Wpf.MainWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:CryptoTrading.Wpf.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

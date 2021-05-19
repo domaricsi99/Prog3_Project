@@ -1,0 +1,23 @@
+﻿<Window x:Class="CryptoTrading.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptoTrading.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="302" Width="400"
+        Loaded="Window_Loaded" Closing="Window_Closing">
+    <Window.DataContext>
+        <local:MainVM/>
+    </Window.DataContext>
+
+    <Grid>
+        <DataGrid IsReadOnly="True" Margin="25,19,25,65"  SelectedItem="{Binding Path=SelectedCrypto}" ItemsSource="{Binding Path=AllCrypto}" Width="350"/>
+        
+        <Button Command="{Binding Path=LoadCmd}" Content="LOAD" Margin="25,233,299,12"/>
+        <Button Command="{Binding Path=AddCmd}" Content="ADD" Margin="116,233,208,12"/>
+        <Button Command="{Binding Path=ModCmd}" Content="MOD" Margin="209,233,115,12"/>
+        <Button Command="{Binding Path=DelCmd}" Content="DEL" Margin="299,234,25,13"/>
+
+    </Grid>
+</Window>

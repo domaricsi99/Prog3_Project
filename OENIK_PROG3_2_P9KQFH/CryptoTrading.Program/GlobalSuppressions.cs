@@ -1,0 +1,35 @@
+﻿// <copyright file="GlobalSuppressions.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+using System.Diagnostics.CodeAnalysis;
+
+[assembly: SuppressMessage("Reliability", "CA2000:Dispose objects before losing scope", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.Main")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.Main")]
+[assembly: SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1404:Code analysis suppression should have justification", Justification = "<Pending>")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.Welcome")]
+[assembly: SuppressMessage("Reliability", "CA2000:Dispose objects before losing scope", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Factory.#ctor")]
+[assembly: SuppressMessage("Design", "CA1051:Do not declare visible instance fields", Justification = "<Pending>", Scope = "member", Target = "~F:CryptoTrading.Program.Factory.cryptoLogic")]
+[assembly: SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1401:Fields should be private", Justification = "<Pending>", Scope = "member", Target = "~F:CryptoTrading.Program.Factory.cryptoLogic")]
+[assembly: SuppressMessage("Design", "CA1051:Do not declare visible instance fields", Justification = "<Pending>", Scope = "member", Target = "~F:CryptoTrading.Program.Factory.currencyLogic")]
+[assembly: SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1401:Fields should be private", Justification = "<Pending>", Scope = "member", Target = "~F:CryptoTrading.Program.Factory.currencyLogic")]
+[assembly: SuppressMessage("Design", "CA1051:Do not declare visible instance fields", Justification = "<Pending>", Scope = "member", Target = "~F:CryptoTrading.Program.Factory.memberLogic")]
+[assembly: SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1401:Fields should be private", Justification = "<Pending>", Scope = "member", Target = "~F:CryptoTrading.Program.Factory.memberLogic")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.DeletBtc(CryptoTrading.Logic.ICryptoLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.BuyBTC(CryptoTrading.Logic.ICryptoLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.AddNewCrypto(CryptoTrading.Logic.ICryptoLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.AddNewMember(CryptoTrading.Logic.IMemberLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1305:Specify IFormatProvider", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.AddNewMember(CryptoTrading.Logic.IMemberLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.DeleteProfil(CryptoTrading.Logic.IMemberLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1305:Specify IFormatProvider", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.Deposite(CryptoTrading.Logic.IMemberLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.Deposite(CryptoTrading.Logic.IMemberLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.AddNewCurrency(CryptoTrading.Logic.ICurrencyLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.DeleteCurrency(CryptoTrading.Logic.ICurrencyLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.UpdateCurrencyPrice(CryptoTrading.Logic.ICurrencyLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.DoubleOrQuits(CryptoTrading.Logic.ICryptoLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.Refresh(CryptoTrading.Logic.ICryptoLogic)")]
+[assembly: SuppressMessage("Reliability", "CA2008:Do not create tasks without passing a TaskScheduler", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.GetAllNameAsStringDoSomethingAsync(CryptoTrading.Logic.ICryptoLogic)")]
+[assembly: SuppressMessage("Reliability", "CA2008:Do not create tasks without passing a TaskScheduler", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.DoubleOrQuitsAsync(CryptoTrading.Logic.ICryptoLogic)")]
+[assembly: SuppressMessage("Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.DoubleOrQuitsAsync(CryptoTrading.Logic.ICryptoLogic)")]
+[assembly: SuppressMessage("Reliability", "CA2008:Do not create tasks without passing a TaskScheduler", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.BuyBTCAsync(CryptoTrading.Logic.ICryptoLogic)")]
+[assembly: SuppressMessage("Reliability", "CA2008:Do not create tasks without passing a TaskScheduler", Justification = "<Pending>", Scope = "member", Target = "~M:CryptoTrading.Program.Program.SellBTCAsync(CryptoTrading.Logic.ICryptoLogic)")]

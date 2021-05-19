@@ -1,0 +1,14 @@
+﻿@model CryptoTradingMVC.Web.Model.CryptoesViewModel
+
+@{
+    ViewData["Title"] = "Crud Index";
+}
+
+<h2>Cryptoes Index</h2>
+
+<p style="color:red">@TempData["editResult"]</p>
+
+@await Html.PartialAsync("CryptoesEdit", Model.EditedCrypto)
+
+@await Html.PartialAsync("CryptoesList", Model.ListOfCryptoes)
+
