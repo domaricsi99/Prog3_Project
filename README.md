@@ -2,7 +2,6 @@
 CryptoTrading
 
 #Function List#
-
 CryptoTrading.Program:
 Az alapvető CRUD műveletek elvégzésre alkalmas, tehát képesek vagyunk:
 	Új kriptovalutát/ felhasználót az adatbázishoz hozzá adni
@@ -27,8 +26,4 @@ WPF-ben megírva API segítségével az alapvető CRUD műveletek elvégzésre a
 	Kikérni az adatbázisól a adatokat
 	Szerkeszteni a kriptovaluta adatait
 	Törölni az adatbázisből
-	
-#Comment#
-A projekt egy féléves feladatként készült el ahol még nem ismertették részletesen a git használatát, 
-mindent a master ágra kellett feltenni ezért inkább egy új repositoryt készítettem el ehhez. 
 
