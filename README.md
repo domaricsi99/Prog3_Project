@@ -27,4 +27,8 @@ WPF-ben megírva API segítségével az alapvető CRUD műveletek elvégzésre a
 	Kikérni az adatbázisól a adatokat
 	Szerkeszteni a kriptovaluta adatait
 	Törölni az adatbázisből
+	
+#Comment#
+A projekt egy féléves feladatként készült el ahol még nem ismertették részletesen a git használatát, 
+mindent a master ágra kellett feltenni ezért inkább egy új repositoryt készítettem el ehhez. 
 
